@@ -1,0 +1,6 @@
+{
+  "name": "Chanel | Luxury Designs & Haute Couture",
+  "description": "Discover Chanel's Haute Couture, Fine Jewelry, and iconic Fragrances. High-quality craftsmanship and timeless Parisian elegance.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
