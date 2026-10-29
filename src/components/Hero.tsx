@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { ArrowRight, ShieldCheck } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import Silk from './Silk';
 import BorderGlow from './BorderGlow';
 import StrokeText from './StrokeText';
@@ -38,14 +38,14 @@ export const Hero: React.FC<HeroProps> = ({ onBuyNow }) => {
       {/* Radiant Purple Ambient Vignette Overlay */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-purple-950/20 to-black/20 pointer-events-none z-0" />
 
-      <div className="relative z-10 w-full max-w-6xl mx-auto text-center space-y-14 px-2 sm:px-6">
+      <div className="relative z-10 w-full max-w-6xl mx-auto text-center space-y-3 px-2 sm:px-6">
         
         {/* Hero Title with Whole White StrokeText on CHANEL */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-          className="w-full flex justify-center pt-10 sm:pt-16 pb-2 filter drop-shadow-[0_8px_25px_rgba(0,0,0,0.9)] overflow-visible"
+          className="w-full flex justify-center pt-2 sm:pt-4 pb-0 filter drop-shadow-[0_8px_25px_rgba(0,0,0,0.9)] overflow-visible"
         >
           <StrokeText
             text="CHANEL"
@@ -86,7 +86,7 @@ export const Hero: React.FC<HeroProps> = ({ onBuyNow }) => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-          className="pt-2 flex flex-col items-center justify-center gap-5"
+          className="pt-4 flex flex-col items-center justify-center gap-5"
         >
           <motion.div
             whileHover={{ scale: 1.05 }}
@@ -111,16 +111,6 @@ export const Hero: React.FC<HeroProps> = ({ onBuyNow }) => {
               </div>
             </BorderGlow>
           </motion.div>
-
-          {/* Quiet Trust Markers */}
-          <div className="flex items-center justify-center gap-5 text-xs text-purple-100 tracking-widest pt-2 bg-black/40 backdrop-blur-md px-6 py-2.5 rounded-full border border-purple-500/20 shadow-md">
-            <span className="flex items-center gap-1.5">
-              <ShieldCheck className="w-3.5 h-3.5 text-purple-300" />
-              Authentic Maison Guarantee
-            </span>
-            <span>·</span>
-            <span>Complimentary Global Delivery</span>
-          </div>
         </motion.div>
       </div>
 
